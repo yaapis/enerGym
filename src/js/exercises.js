@@ -106,10 +106,10 @@ function renderExercises(exercises) {
               </div>
             </div>
             <div class="start-cont">
-              <button class="arrow-btn" type="button">
+              <button class="arrow-btn workout-starter" type="button">
                 Start
-                <svg class="arrow" width="14" height="14">
-                  <use href="./sprite.svg#icon-exercises-arrow"></use>
+                <svg class="arrow workout-starter" width="14" height="14">
+                  <use href="./sprite.svg#icon-exercises-arrow" class="workout-starter"></use>
                 </svg>
               </button>
             </div>
@@ -184,7 +184,7 @@ cardsContainer.addEventListener('click', async event => {
       `${event.target.dataset.name}`
     );
   }
-  if (event.target.classList.contains('arrow-btn')) {
+  if (event.target.classList.contains('workout-starter')) {
     const itemId = listItemsArr.filter(
       elem =>
         elem.dataset.exerciseid ===
